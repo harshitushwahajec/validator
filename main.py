@@ -3,6 +3,7 @@ from PyQt4.QtGui import *
 import user_interface
 import sys
 import os
+import validate
 
 validation_status_dict = {0: 'New', 1: 'Waiting', 2: 'Valid', 3: 'Invalid'}
 
@@ -11,9 +12,11 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
+
         self.load_schema()
 
         self.add_button.clicked.connect(self.file_selector)
+
 
     def file_selector(self):
         list_of_files = QFileDialog.getOpenFileNames(self, caption="Select Files", directory=".",
