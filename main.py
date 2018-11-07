@@ -13,12 +13,13 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
-        #self.validate_obj = None
-
-        self.load_schema()
-
+        self.validate_obj = None
+        self.list_of_schema = []
+        self.load_schema_to_combobox()
+        self.set_schema_from_combobox()
         self.add_button.clicked.connect(self.file_selector)
         self.validate_all_button.clicked.connect(self.validate_all_files)
+        self.validate_selected_button.clicked.connect(self.validate_selected_files)
 
     def file_selector(self):
         list_of_files = QFileDialog.getOpenFileNames(self, caption="Select Files", directory=".",
@@ -36,8 +37,12 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
             self.table.setItem(row_num, 2, QTableWidgetItem(file))  # filename only
             self.table.setItem(row_num, 3, QTableWidgetItem(validation_status_dict[0]))
 
-    def load_schema(self):
+    def set_schema_from_combobox(self):
+        self.validate_obj = validate.Validate(self.comboBox.currentText())
+
+    def load_schema_to_combobox(self):
         count = 0
+        self.list_of_schema = []
         for file in os.listdir("schemas/"):
             if file.endswith(".xsd"):
                 self.comboBox.addItem(file.split('.')[-2])
@@ -53,17 +58,22 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
     def validate_files(self, index_of_files):
 
         for index in index_of_files:
-            self.table.setItem(index, 3, validation_status_dict[1])
+            self.table.setItem(index, 3, QTableWidgetItem(validation_status_dict[1]))
 
         for index in index_of_files:
-            result = self.validate_obj.start_validation(self.table.item(index, 2))
-            if result == True:
-                self.table.setItem(index, 3, validation_status_dict[2])
+            result = self.validate_obj.start_validation(open(self.table.item(index, 2).text(),'r'))
+            if result:
+                self.table.setItem(index, 3, QTableWidgetItem(validation_status_dict[2]))
             else:
-                self.table.setItem(index, 3, validation_status_dict[3])
+                self.table.setItem(index, 3, QTableWidgetItem(validation_status_dict[3]))
 
     def validate_all_files(self):
-        return range(self.table.rowCount())
+        self.validate_files(range(self.table.rowCount()))
+
+    def validate_selected_files(self):
+        for index in range(self.table.rowCount()):
+            #if self.table.item(index, 0 )
+            pass
 
 
 app = QApplication(sys.argv)
