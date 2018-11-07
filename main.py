@@ -5,6 +5,7 @@ import sys
 import os
 import validate
 
+#move to config
 validation_status_dict = {0: 'New', 1: 'Waiting', 2: 'Valid', 3: 'Invalid'}
 
 
@@ -12,11 +13,12 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
+        #self.validate_obj = None
 
         self.load_schema()
 
         self.add_button.clicked.connect(self.file_selector)
-
+        self.validate_all_button.clicked.connect(self.validate_all_files)
 
     def file_selector(self):
         list_of_files = QFileDialog.getOpenFileNames(self, caption="Select Files", directory=".",
@@ -47,6 +49,21 @@ class Main(QMainWindow, user_interface.Ui_MainWindow):
             self.comboBox.setEnabled(True)
         else:
             print('No Schema found')
+
+    def validate_files(self, index_of_files):
+
+        for index in index_of_files:
+            self.table.setItem(index, 3, validation_status_dict[1])
+
+        for index in index_of_files:
+            result = self.validate_obj.start_validation(self.table.item(index, 2))
+            if result == True:
+                self.table.setItem(index, 3, validation_status_dict[2])
+            else:
+                self.table.setItem(index, 3, validation_status_dict[3])
+
+    def validate_all_files(self):
+        return range(self.table.rowCount())
 
 
 app = QApplication(sys.argv)
