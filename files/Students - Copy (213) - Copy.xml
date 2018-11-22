@@ -1,0 +1,23 @@
+<students>
+    <student>
+        <name>Student1</name>
+        <age>22</age>
+        <phone>9898989898</phone>
+        <address>
+            <street>abc</street>
+            <city>xyz</city>
+            <pincode>456456</pincode>
+        </address>
+    </student>
+    <student>
+        <name>Student2</name>
+        <age>22</age>
+        <phone>9898989898</phone>
+        <address>
+
+            <street>abc</street>
+            <city>xyz</city>
+ <pincode>456456</pincode>
+        </address>
+    </student>
+</students>

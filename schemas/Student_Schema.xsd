@@ -3,22 +3,22 @@
   <xs:element name="students">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" name="student">
+        <xs:element maxOccurs = "unbounded" name="student">
           <xs:complexType>
-            <xs:sequence>
-              <xs:element name="name" type="xs:string" />
-              <xs:element name="age" type="xs:unsignedByte" />
-              <xs:element name="phone" type="xs:unsignedLong" />
-              <xs:element name="address">
+            <xs:sequence><!-- <xs:choice minOccurs = "4" maxOccurs="4"> -->
+              <xs:element minOccurs = "1" name="name" type="xs:string" />
+              <xs:element minOccurs = "1" name="age" type="xs:unsignedByte" />
+              <xs:element minOccurs = "1" name="phone" type="xs:unsignedLong" />
+              <xs:element minOccurs = "1" name="address">
                 <xs:complexType>
-                  <xs:sequence>
+                  <xs:sequence><!-- <xs:choice maxOccurs="3"> -->
                     <xs:element name="street" type="xs:string" />
                     <xs:element name="city" type="xs:string" />
                     <xs:element name="pincode" type="xs:unsignedInt" />
-                  </xs:sequence>
+                  </xs:sequence><!-- </xs:choice> -->
                 </xs:complexType>
               </xs:element>
-            </xs:sequence>
+            </xs:sequence><!-- </xs:choice> -->
           </xs:complexType>
         </xs:element>
       </xs:sequence>
