@@ -11,6 +11,7 @@
     </student>
     <student>
         <name>Student2</name>
+        <age>22</age>
         <phone>9898989898</phone>
         <address>
             <street>abc</street>

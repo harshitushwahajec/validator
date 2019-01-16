@@ -14,7 +14,7 @@
             "level": "DEBUG",
             "formatter": "simple",
             "filename": "app\\app_logs\\app.log",
-            "maxBytes": 524288, // 512KB
+            "maxBytes": 524288,
             "backupCount": 10,
             "encoding": "utf8"
         }

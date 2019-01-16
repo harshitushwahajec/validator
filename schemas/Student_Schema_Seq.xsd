@@ -4,20 +4,20 @@
       <xs:sequence>
         <xs:element name="student" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
-            <xs:all>
+            <xs:sequence>
               <xs:element type="xs:string" name="name"/>
               <xs:element type="xs:byte" name="age"/>
               <xs:element type="xs:long" name="phone"/>
               <xs:element name="address">
                 <xs:complexType>
-                  <xs:all>
+                  <xs:sequence>
                     <xs:element type="xs:string" name="street"/>
                     <xs:element type="xs:string" name="city"/>
                     <xs:element type="xs:int" name="pincode"/>
-                  </xs:all>
+                  </xs:sequence>
                 </xs:complexType>
               </xs:element>
-            </xs:all>
+            </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
