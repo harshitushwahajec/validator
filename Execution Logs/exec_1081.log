@@ -1,0 +1,11 @@
+1081 - 2019-01-16 23:06:45,731 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:07:08,659 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:07:08,659 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:07:12,671 - ERROR - file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+1081 - 2019-01-16 23:07:12,671 - ERROR - file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+1081 - 2019-01-16 23:09:01,464 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:09:01,464 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:09:01,464 - DEBUG - Testing from  Validate file
+1081 - 2019-01-16 23:09:52,606 - INFO - ************** Application terminated  **************
+1081 - 2019-01-16 23:09:52,606 - INFO - ************** Application terminated  **************
+1081 - 2019-01-16 23:09:52,606 - INFO - ************** Application terminated  **************

@@ -1,0 +1,2 @@
+1049 - 2019-01-16 20:46:18,417 - DEBUG - Testing from  Validate file
+1049 - 2019-01-16 20:47:50,406 - ERROR - file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:12:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'student': Missing child element(s). Expected is ( age ).

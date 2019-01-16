@@ -1,0 +1,3 @@
+1021 - 2018-11-29 21:28:09,901 - DEBUG - Testing from  Validate file
+1021 - 2018-11-29 21:28:19,499 - ERROR - file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:14:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'phone': This element is not expected. Expected is ( age ).
