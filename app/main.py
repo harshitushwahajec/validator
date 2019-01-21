@@ -8,6 +8,9 @@ import logging
 import logging.config
 import webbrowser
 
+readme_file_path = 'readme.txt';
+if not os.path.exists(readme_file_path):
+    os.chdir('..')
 path_log_config = os.path.join('config', 'app_logging.json')
 
 if os.path.exists(path_log_config):

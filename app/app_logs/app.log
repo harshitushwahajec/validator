@@ -269,3 +269,24 @@ file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:14:0:ERROR:SC
 2019-01-16 23:07:12,671 - root - ERROR - file:/C:/Users/Harshit/PycharmProjects/Validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
 2019-01-16 23:09:01,464 - root - DEBUG - Testing from  Validate file
 2019-01-16 23:09:52,606 - root - INFO - ************** Application terminated  **************
+2019-01-17 13:57:37,238 - root - DEBUG - Log Configurations loaded
+2019-01-17 13:57:37,285 - root - INFO - ************** Application started **************
+2019-01-17 13:57:39,312 - root - DEBUG - Testing from  Validate file
+2019-01-17 13:58:18,537 - root - DEBUG - Testing from  Validate file
+2019-01-17 13:58:20,768 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-17 13:58:25,979 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-17 13:58:37,256 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-17 13:58:51,456 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-17 13:58:54,382 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-17 13:58:57,352 - root - DEBUG - Testing from  Validate file
+2019-01-17 14:25:41,389 - root - INFO - ************** Application terminated  **************
+2019-01-17 14:25:48,020 - root - DEBUG - Log Configurations loaded
+2019-01-17 14:25:48,020 - root - INFO - ************** Application started **************
+2019-01-17 14:25:48,160 - root - DEBUG - Testing from  Validate file
+2019-01-17 14:38:38,264 - root - INFO - ************** Application terminated  **************
+2019-01-17 14:38:46,163 - root - DEBUG - Log Configurations loaded
+2019-01-17 14:38:46,163 - root - INFO - ************** Application started **************
+2019-01-17 14:38:46,267 - root - DEBUG - Testing from  Validate file
+2019-01-17 14:40:32,102 - root - DEBUG - Testing from  Validate file
+2019-01-17 14:40:33,352 - root - ERROR - file:/C:/Users/harshit.kushwaha/PycharmProjects/validator/files/invalid.xml:5:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'address': This element is not expected. Expected is ( phone ).
+2019-01-18 12:41:27,293 - root - INFO - ************** Application terminated  **************
